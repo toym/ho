@@ -106,7 +106,7 @@
 				imple.rain.attr("cy",function(d){
 					d.y = d.y + imple.option.rain_speed;
 					if(d.y > imple.option.height){
-						d.y = 0;
+						d.y -= imple.option.height;
 					}
 					return d.y;
 				});
